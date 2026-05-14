@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+@theme {
+  --color-light-green: #7ed56f;
+  --color-medium-green: #55c57a;
+  --color-dark-green: #28b485;
+  --font-main: "Lato", sans-serif;
+  --font-secondary: "Rubik", sans-serif;
+}
+
+@utility center-elements {
+  @apply flex items-center justify-center;
+}
+
+#image-gradient {
+  clip-path: polygon(0 0, 100% 0, 100% 89%, 0% 100%);
+}
+
+@layer base {
+  html {
+    font-family: var(--font-secondary);
+    font-weight: 300;
+  }
+}
