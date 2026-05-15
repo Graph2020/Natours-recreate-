@@ -17,14 +17,23 @@
 }
 
 @utility page-container {
-  @apply h-screen w-full p-3;
+  @apply min-h-screen w-full p-3;
+}
+
+@utility mini-title {
+  @apply font-main font-medium text-gray-500 uppercase sm:text-lg;
 }
 
 @layer components {
   .main-title {
     @apply font-main text-center text-2xl font-bold tracking-wider uppercase sm:text-4xl;
     @apply from-light-green to-medium-green bg-linear-to-r bg-clip-text text-transparent;
-    @apply transition-all duration-300 hover:skew-6;
+    @apply transition-all duration-300 hover:skew-6 hover:drop-shadow-2xl;
+  }
+  .main-link {
+    @apply text-light-green border-b-light-green border-b p-1;
+    @apply cursor-pointer transition-all duration-300;
+    @apply hover:bg-light-green hover:-translate-y-1 hover:text-white;
   }
 }
 
