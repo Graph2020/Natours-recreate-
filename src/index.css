@@ -12,6 +12,22 @@
   @apply flex items-center justify-center;
 }
 
+@utility hero-title {
+  @apply font-main text-5xl font-bold tracking-wider sm:text-8xl sm:tracking-[10px] lg:tracking-[15px];
+}
+
+@utility page-container {
+  @apply h-screen w-full p-3;
+}
+
+@layer components {
+  .main-title {
+    @apply font-main text-center text-2xl font-bold tracking-wider uppercase sm:text-4xl;
+    @apply from-light-green to-medium-green bg-linear-to-r bg-clip-text text-transparent;
+    @apply transition-all duration-300 hover:skew-6;
+  }
+}
+
 #image-gradient {
   clip-path: polygon(0 0, 100% 0, 100% 89%, 0% 100%);
 }
