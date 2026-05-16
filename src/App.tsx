@@ -4,6 +4,7 @@ import Hero from "./sections/Hero";
 import BurrgerButton from "./components/BurgerButton";
 import About from "./sections/About";
 import Cards from "./sections/Cards";
+import Tours from "./sections/Tours";
 
 const App = (): JSX.Element => {
   return (
@@ -12,6 +13,7 @@ const App = (): JSX.Element => {
       <BurrgerButton />
       <About />
       <Cards />
+      <Tours />
     </div>
   );
 };

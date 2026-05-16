@@ -5,7 +5,7 @@ import { images } from "../const";
 const About = (): JSX.Element => {
   return (
     <section className="page-container center-elements flex-col gap-6 sm:-mt-10">
-      <h1 className="main-title mb-10 md:mt-10">
+      <h1 className="main-title md:mt-10">
         Exciting tours for adventurous people
       </h1>
 

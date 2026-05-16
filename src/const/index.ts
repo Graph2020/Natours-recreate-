@@ -19,6 +19,19 @@ interface CardsInfo {
   scale: number;
   position: [number, number, number];
 }
+
+export interface FlipCardProps {
+  imageSrc: string;
+  title: string;
+  subtitle: string;
+  gradient: string;
+  price: string;
+
+  days: string;
+  amountOfPeople: string;
+  difficulty: string;
+}
+
 export const images: Images[] = [
   {
     source: "/img/nat-1",
@@ -75,6 +88,39 @@ export const cards: CardsInfo[] = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.",
     model: HeartModel,
     scale: 0.015,
-    position: [0, 0.5, 0],
+    position: [0, 0, 0],
+  },
+];
+
+export const flipCards: FlipCardProps[] = [
+  {
+    imageSrc: "/img/nat-5.jpg",
+    title: "The sea",
+    subtitle: "explorer",
+    gradient: "bg-linear-to-r from-yellow-500/85 to-orange-600/85",
+    price: "$297",
+    days: "3 day tours",
+    amountOfPeople: "Up to 30 people",
+    difficulty: "Difficulty: easy",
+  },
+  {
+    imageSrc: "/img/nat-6.jpg",
+    title: "The forest",
+    subtitle: "hiker",
+    gradient: "bg-linear-to-r from-light-green/85 to-medium-green/85",
+    price: "$497",
+    days: "7 day tours",
+    amountOfPeople: "Up to 40 people",
+    difficulty: "Difficulty: medium",
+  },
+  {
+    imageSrc: "/img/nat-7.jpg",
+    title: "The snow",
+    subtitle: "adventurer",
+    gradient: "bg-linear-to-r from-blue-500/85 to-purple-700/85",
+    price: "$897",
+    days: "5 day tours",
+    amountOfPeople: "Up to 15 people",
+    difficulty: "Difficulty: hard",
   },
 ];

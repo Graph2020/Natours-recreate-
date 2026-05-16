@@ -30,7 +30,7 @@
 
 @layer components {
   .main-title {
-    @apply font-main text-center text-2xl font-bold tracking-wider uppercase sm:text-4xl;
+    @apply font-main mb-10 text-center text-2xl font-bold tracking-wider uppercase sm:text-4xl;
     @apply from-light-green to-medium-green bg-linear-to-r bg-clip-text text-transparent;
     @apply transition-all duration-300 hover:skew-6 hover:drop-shadow-2xl;
   }
