@@ -24,6 +24,10 @@
   @apply font-main font-medium text-gray-500 uppercase sm:text-lg;
 }
 
+@utility main-gradient {
+  @apply from-light-green/80 to-medium-green/80 bg-linear-to-r;
+}
+
 @layer components {
   .main-title {
     @apply font-main text-center text-2xl font-bold tracking-wider uppercase sm:text-4xl;
@@ -39,6 +43,10 @@
 
 #image-gradient {
   clip-path: polygon(0 0, 100% 0, 100% 89%, 0% 100%);
+}
+
+#cards-clip {
+  clip-path: polygon(0 14%, 100% 0, 100% 83%, 0 100%);
 }
 
 @layer base {

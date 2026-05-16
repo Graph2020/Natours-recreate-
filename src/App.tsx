@@ -3,6 +3,7 @@ import type { JSX } from "react";
 import Hero from "./sections/Hero";
 import BurrgerButton from "./components/BurgerButton";
 import About from "./sections/About";
+import Cards from "./sections/Cards";
 
 const App = (): JSX.Element => {
   return (
@@ -10,6 +11,7 @@ const App = (): JSX.Element => {
       <Hero />
       <BurrgerButton />
       <About />
+      <Cards />
     </div>
   );
 };

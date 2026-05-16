@@ -4,3 +4,5 @@ on responsivness
               <source media="(max-width: 767px)" srcSet={`${img.source}.jpg`} />
               <img src={`${img.source}-large.jpg`} alt={img.alt} />
             </picture>
+
+2. createElement(EarthModel), if your file is just ts or js jsx won't be alowed so createElements needed it the same as <Component />

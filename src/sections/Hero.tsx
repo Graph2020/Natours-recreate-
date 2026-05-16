@@ -1,7 +1,6 @@
 import type { JSX } from "react";
 import MainButton from "../components/MainButton";
 import { MdTravelExplore } from "react-icons/md";
-import BurrgerButton from "../components/BurgerButton";
 
 const Hero = (): JSX.Element => {
   return (
@@ -9,7 +8,7 @@ const Hero = (): JSX.Element => {
       id="image-gradient"
       className="center-elements relative mt-5 h-[90vh] w-full bg-[url('/img/hero.jpg')] bg-cover bg-center text-white uppercase"
     >
-      <div className="from-light-green/80 to-dark-green/80 absolute z-0 h-full w-full bg-linear-to-r"></div>
+      <div className="main-gradient absolute z-0 h-full w-full"></div>
 
       <nav className="md: absolute top-3 left-0 flex h-12 w-full items-center justify-between p-4 sm:p-8">
         <MdTravelExplore className="size-12 md:size-16" />
