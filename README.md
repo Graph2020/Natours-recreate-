@@ -6,3 +6,5 @@ on responsivness
             </picture>
 
 2. createElement(EarthModel), if your file is just ts or js jsx won't be alowed so createElements needed it the same as <Component />
+
+3. Placeholder-not-snown you can do smt when placeholder is not shown

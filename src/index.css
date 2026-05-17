@@ -39,6 +39,11 @@
     @apply cursor-pointer transition-all duration-300;
     @apply hover:bg-light-green hover:-translate-y-1 hover:text-white;
   }
+  .book-input {
+    @apply h-12 w-full border-b-2 border-transparent bg-white p-3 outline-none md:w-3/4;
+    @apply transition-all duration-300 focus:shadow-lg;
+    @apply focus:valid:border-medium-green focus:border-b-2 focus:invalid:border-red-500;
+  }
 }
 
 #image-gradient {

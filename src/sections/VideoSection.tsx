@@ -15,11 +15,14 @@ const VideoSection = (): JSX.Element => {
   const sectionRef = useRef<HTMLElement>(null);
 
   useGSAP(() => {
-    if (!videoRef.current || !sectionRef.current) return;
+    const video = videoRef.current;
+    const section = sectionRef.current;
+
+    if (!video || !section) return;
 
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: sectionRef.current,
+        trigger: section,
         start: "top center",
         end: "90% center",
         scrub: true,
@@ -28,11 +31,11 @@ const VideoSection = (): JSX.Element => {
       },
     });
 
-    videoRef.current.onloadedmetadata = () => {
+    video.onloadedmetadata = () => {
       tl.to(
-        videoRef.current,
+        video,
         {
-          currentTime: videoRef.current.duration,
+          currentTime: video.duration,
           duration: 4,
           ease: "power1.inOut",
         },
